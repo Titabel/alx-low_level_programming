@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * main - Entry Point
+ * main - Entry point
  * Description: Write a program that prints all possible
  * different combinations of two digits
  * Return: 0
@@ -25,7 +25,7 @@ int main(void)
 
 																						  if (firstDigit != 98 || seconDigit != 99)
 																						  {
-																							putchar(',');																																			    putchar(' ')																																	         }
+																							putchar(',');																																			    putchar(' ');																																	         }
 																				      }
 		    ++seconDigit;
 																				}
