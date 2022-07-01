@@ -2,7 +2,7 @@
 
 /**
  * main - main - two pairs of numbers that do not repeat
- *
+ * Description: Print all possible combinations of 2-digit numbers
  * Return (0)
  */
 
@@ -23,9 +23,8 @@ int main(void)
 																							}
 		      if (j * 100 + i != 9899)																		{
 																								putchar(',');
-																								putchar(' ');
-																							}
-		}
+																								putchar(' ');																		  }
+		}                                                                                                                                               
 	}
 	putchar('\n');
 
