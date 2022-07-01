@@ -1,25 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
  * main - Entry point
- * Description: Print numbers   
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int d;
+int k;
 
-for (d = '0'; d <= '9'; d++)
+for (k = 48; k <= 57; k++)
 {
-putchar(d);
-if (d != '9')
+putchar(k);
+if (k < 57)
 {
 putchar(',');
 putchar(' ');
 }
 }
 putchar('\n');
-
 return (0);
 }
