@@ -1,25 +1,25 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
- * Description: prints numbers
- * Return: Always 0 (success)
+ *   
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i;
+	int d;
 
-for (i = '0'; i <= '9' ; i++)
-{
-putchar(i);
+	for (d = '0'; d <= '9'; d++)
+	{
+		 putchar(d);
+		 if (d != '9')
+		 {
+			  putchar(',');
+			  putchar(' ');
+		 }
+	}
+	putchar('\n');
 
-if (i != '9')
-{
-putchar(',');							
-putchar(' ');
-}	
-}
-
-putchar('\n');
-return (0);
+	return (0);
 }
