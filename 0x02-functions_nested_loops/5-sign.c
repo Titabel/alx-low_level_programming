@@ -28,5 +28,5 @@ else if (n < 0)
 x = -1;
 _putchar('-');
 }
-return(x);
+return (x);
 }
