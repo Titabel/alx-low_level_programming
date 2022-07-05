@@ -1,22 +1,22 @@
 #include "main.h"
-
 /**
- * _islower - Entry point
- * Description: checks is a character is lowercase
- * @c: the integer value it receives
- * Return: 1 if true. 0 if false.
+ * _isalpha - checks for alphabetic characters
+ *
+ * Description: checks for alpha
+ *
+ * Return: 1 - alphabetic character 0 - otherwise
+ *
+ * @c:input.
+ *
  */
-int _islower(int c)
+int _isalpha(int c)
 {
-int i = 'a';
-
-for (i = 'a'; i <= 'z'; i++)
-{
-/* refer int c*/
-if (c == i)
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 {
 return (1);
 }
-}
+else
+{
 return (0);
+}
 }
