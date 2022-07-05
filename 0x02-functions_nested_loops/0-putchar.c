@@ -10,11 +10,11 @@
 
 int main(void)
 {
-char tex[]= "_putchar";
-while (text[i] !='\0')
+char *sh= "_putchar";
+while (*sh)
 {
-_putchar(tex[i]);
-i++;
+_putchar(*sh);
+sh++;
 }
 _putchar('\n');
 return (0);
