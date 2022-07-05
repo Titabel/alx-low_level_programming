@@ -1,28 +1,21 @@
 #include "main.h"
 /**
- * jack_bauer - all minutes in a day
- *
- * Description:prints all minutes in a day
- *
- * Return:void
- *
+ * jack_bauer - prints a 24 hour timer in military
  */
 void jack_bauer(void)
 {
-        int h;
+	int i, j;
 
-        for (h = 0; h < 24; h++)
-        {
-               int min;
-
-               for (min = 0; min < 60; min++)
-               }   
-                       _putcher('0' + (h / 10));
-                       _putchar('0' + (h % 10));
-														                            _putchar(':');
-														                            _putchar('0' + (min / 10));
-														                            _putchar('0' + (min % 10));
-														                            _putchar('\n');
-                }
-       }
+	for (i = 0; i < 24; i++)
+	{
+			for (j = 0; j < 60; j++)
+			{
+						_putchar(i / 10 + 48);
+						_putchar(i % 10 + 48);
+						_putchar(':');
+						_putchar(j / 10 + 48);
+						_putchar(j % 10 + 48);
+						_putchar('\n');
+					}
+		}
 }
