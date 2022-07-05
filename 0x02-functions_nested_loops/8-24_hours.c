@@ -1,21 +1,21 @@
 #include "main.h"
 /**
- * jack_bauer - prints a 24 hour timer in military
+ * jack_bauer - timing
  */
 void jack_bauer(void)
 {
-	int i, j;
-
-	for (i = 0; i < 24; i++)
-	{
-			for (j = 0; j < 60; j++)
-			{
-						_putchar(i / 10 + 48);
-						_putchar(i % 10 + 48);
-						_putchar(':');
-						_putchar(j / 10 + 48);
-						_putchar(j % 10 + 48);
-						_putchar('\n');
-					}
-		}
+int HourTen;
+int Minute;
+for (HourTen = 0; HourTen <= 23; HourTen++)
+{
+for (Minute = 0; Minute <= 59; Minute++)
+{
+_putchar('0' + (HourTen / 10));
+_putchar('0' + (HourTen % 10));
+_putchar(':');
+_putchar('0' + (Minute / 10));
+_putchar('0' + (Minute % 10));
+_putchar ('\n');
+}
+}
 }
