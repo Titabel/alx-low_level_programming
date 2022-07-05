@@ -15,9 +15,9 @@ int main(void)
      _putchar('u');
      _putchar('t');
      _putchar('c');
-     _putcher('h');
-     _putcher('a');
-     _putcher('r');
+     _putchar('h');
+     _putchar('a');
+     _putchar('r');
 
      return (0);
 }
