@@ -12,12 +12,12 @@ int main(void)
 	n = 612852475143;
 	for (fp = 2; fp <= n; fp++)
 	{
-		f (n % fp == 0)
+		if (n % fp == 0)
 		{
-		i	n /= fp;
+			n /= fp;
 			fp--;
 		}
 	}
-	prntf("%l\n", fp);
-return (0);
+	printf("%ld\n", fp);
+	return (0);
 }
